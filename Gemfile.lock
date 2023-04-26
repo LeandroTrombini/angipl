@@ -90,6 +90,11 @@ GEM
     diff-lcs (1.5.0)
     erubi (1.12.0)
     erubis (2.7.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     haml (6.1.1)
@@ -258,6 +263,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  factory_bot_rails
   haml-rails (~> 2.0)
   html2haml
   importmap-rails
