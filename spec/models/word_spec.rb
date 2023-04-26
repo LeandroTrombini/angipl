@@ -19,8 +19,9 @@ RSpec.describe Word, type: :model do
       expect(subject).to be_valid
     end
 
+    let!(:word) { FactoryBot.build(:word) }
+
     it "is valid with valid attributes 2" do
-      word = FactoryBot.build(:word)
       expect(word).to be_valid
     end
 
