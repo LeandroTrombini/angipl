@@ -20,12 +20,12 @@ RSpec.describe Word, type: :model do
     end
 
     it "is valid with valid attributes 2" do
-      word = Word.new(value: 'teste', language: 'PT')
+      word = FactoryBot.build(:word)
       expect(word).to be_valid
     end
 
     it "is not valid without a language" do
-      word = Word.new(value: 'teste', language: nil)
+      word = FactoryBot.build(:word, language: nil)
       expect(word).to_not be_valid
     end
   end
